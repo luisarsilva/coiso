@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #1a1a1a;
+  color: #ffffff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* cabe */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px; /* Limita a largura para nao espalhar na tela toda */
+  margin: 0 auto;    /* Centraliza na tela */
+  padding: 30px 40px;
+}
+
+.logo-img {
+  height: 60px;
+  width: auto;
+  display: block;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  margin-left: 35px;
+  font-size: 20px;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #412A34;
+}
+
+/* Principal */
+main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px; /* Mantem tudo juntinho no centro */
+  margin: 0 auto;
+  padding: 20px 40px 60px 40px;
+  flex: 1;
+}
+
+/* Lado Esquerdo */
+.esquerdo {
+  max-width: 550px;
+}
+
+.titulo {
+  display: flex;
+  align-items: center;
+  font-size: 85px; /* Tamanho grandao do titulo */
+  font-weight: 570;
+  letter-spacing: 2px;
+  margin-bottom: 25px;
+}
+
+.foia {
+  width: 55px; /* Tamanho proporcional a letra */
+  height: auto;
+  margin: 0 4px;
+}
+
+.textinhoinho {
+  font-size: 22px;
+  line-height: 1.4;
+  color: #dddddd;
+  margin-bottom: 45px;
+}
+
+/* Mini garrafas */
+.minigarrafa {
+  display: flex;
+  gap: 20px;
+}
+
+.mini-item {
+  width: 75px;
+  height: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s;
+}
+
+
+.mini-item img {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+/* Lado Direito */
+.direito {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 20px;
+}
+
+.garrafao {
+  width: 420px; /* Garrafa grande proporcional */
+  height: auto;
+}

@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.secao-sobre {
+    background-color: #f1f5f9; /* Fundo cinza bem clarinho */
+    padding: 50px;
+
+    /* A MÁGICA DO ALINHAMENTO */
+    display: flex;
+    align-items: center;    /* Alinha a altura no meio */
+    justify-content: center;/* Centraliza tudo na tela */
+    gap: 40px;              /* Espaço entre a imagem e o texto */
+    /* Se a tela for pequena e os itens não couberem, jogue para a linha de baixo! */
+    flex-wrap: wrap;
+}
+
+.caixa-imagem {
+    flex: 1;          /* Cresce e divide o espaço com o texto */
+    min-width: 300px; /* Se a tela for menor que 300px, ele pula de linha! */
+}
+
+/* Arrumando a imagem para caber certinho dentro da caixa dela */
+.caixa-imagem img {
+    width: 100%;         /* Ocupa 100% do espaço da caixa dela */
+    border-radius: 10px; /* Deixa as bordas arredondadas */
+}
+
+/* Configurando a caixa do texto com a mesma regra da imagem */
+.caixa-texto {
+    flex: 1;          /* Cresce e divide o espaço com a imagem */
+    min-width: 300px; /* O limite antes de quebrar a linha */
+}
+
+/* Deixando o texto com visual profissional */
+.caixa-texto h2 {
+    color: #1e293b;
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.caixa-texto p {
+    color: #475569;
+    line-height: 1.6; /* Aumenta o espaço entre as linhas do texto */
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* Estilizando o botão */
+.caixa-texto button {
+    background-color: #2563eb;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.caixa-texto button:hover {
+    background-color: #1d4ed8; /* Escurece o botão ao passar o mouse */
+}

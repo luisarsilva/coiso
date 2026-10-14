@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+
+body {
+    background-color: #121212;
+    color: #ffffff;
+    overflow-x: hidden;
+}
+
+
+
+header {
+    width: 100%;
+    max-width: 1300px; /* limita a largura para não espalhar demais em big telas */
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-start;
+    padding: 40px 60px 20px 60px;
+}
+
+
+/* nav {
+    background-color: #1a1814;    deixa com fundo n gostei mas vo guarda vai que ne
+    padding: 12px 30px;
+    border-radius: 30px;
+} */
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 35px;
+}
+
+
+
+nav ul li a {
+    text-decoration: none;
+    color: #b3b3b3;
+    font-size: 15px;
+    transition: color 0.3s;
+}
+
+
+
+nav ul li a:hover, nav ul li a.active {
+    color: #e5c158;
+}
+
+
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1300px; 
+    margin: 0 auto;
+    padding: 40px 60px 80px 60px;
+    min-height: calc(100vh - 120px);    /* a altura total da tela (os 100vh (100% da janela)) menos o espaço que o menu ocupa (os 120px) */
+}
+
+
+
+.hero-conteudo {
+    max-width: 550px;
+}
+
+
+
+.textinhoinhoinho {
+    color: #e5c158;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    letter-spacing: 1px;    /* espaçamentyo entre letras */
+}
+
+
+
+.hero-conteudo h1 {
+    font-size: 60px; 
+    line-height: 1.15;
+    margin-bottom: 25px;
+    font-weight: 700;
+}
+
+
+
+.hero-conteudo h1 span {
+    color: #e5c158;
+}
+
+
+
+.textinhao {
+    color: #999;
+    font-size: 16px;
+    line-height: 1.6;       /* espaçamento entre as linhas pra deixa mais agradavel */
+    margin-bottom: 35px;
+}
+
+
+
+.butaomenu {
+    background-color: #e5c158;
+    color: #121212;
+    border: none;           /* remove a borda cinza feia q vem de padrão no botão */
+    padding: 16px 40px;
+    font-size: 17px;
+    font-weight: bold;
+    border-radius: 30px;    /* deixa com bordinha redondinha */
+    cursor: pointer;        /* deixa o curcor apontando rs */
+    transition: background 0.3s, transform 0.2s;   /* fala em quantos sec a cor do botão vai demorar pra mudar /
+                                                   fala quantos segundos a animação (tanto de ir como voltar doi botão) vai acontecer*/
+}
+
+
+
+.butaomenu:hover {
+    background-color: #d4ae45;  /* muda a cor (mais escura) do botão quando passa o mouse por cima */
+    transform: translateY(-2px);  /* faz a animação do botao ao passar o mouse por cima,  translateY mexe 2px na vertical */
+}
+
+
+
+.hero-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.hero-image img {
+    width: 700px; 
+    height: auto;
+}
